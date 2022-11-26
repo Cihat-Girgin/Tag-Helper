@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Razor.Introduction.Tag.Helper.Web.DatabaseContexts;
 using Razor.Introduction.Tag.Helper.Web.Models;
@@ -62,7 +62,7 @@ static void AddUserData(WebApplication app)
             Lastname = "x",
             Password = "pass",
             PictureUrl = "/userpictures/userx.jpg",
-            Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" 
+            Description = "Lorem Ipsum dolor sit amet😍"
         },
         new User{
             Id = new Guid(),
@@ -72,7 +72,7 @@ static void AddUserData(WebApplication app)
             Lastname = "y",
             Password = "pass",
             PictureUrl = "/userpictures/usery.jpg",
-            Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            Description = "Lorem Ipsum dolor sit amet 💯 "
         },
         new User{
             Id = new Guid(),
@@ -82,7 +82,7 @@ static void AddUserData(WebApplication app)
             Lastname = "z",
             Password = "pass",
             PictureUrl = "/userpictures/userz.jpg",
-            Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            Description = "Lorem Ipsum dolor sit amet🔥 "
         },
          new User{
             Id = new Guid(),
@@ -92,7 +92,7 @@ static void AddUserData(WebApplication app)
             Lastname = "w",
             Password = "pass",
             PictureUrl = "/userpictures/userw.jpg",
-            Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            Description = "Lorem Ipsum dolor sit amet😻 "
         }
     };
 

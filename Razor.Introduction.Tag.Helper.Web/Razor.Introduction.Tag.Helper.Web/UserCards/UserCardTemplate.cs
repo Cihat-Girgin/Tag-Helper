@@ -22,7 +22,7 @@ namespace Razor.Introduction.Tag.Helper.Web.UserCards
             sb.Append(SetPicture());
             sb.Append($@"<div class='card-body'>
                           <h5>{User.Username}</h5>
-                          <p>{User.Name} {User.Lastname}</p>");
+                          <p>{User.Description}</p>");
             sb.Append(SetFooter());
             sb.Append("</div>");
             sb.Append("</div>");
