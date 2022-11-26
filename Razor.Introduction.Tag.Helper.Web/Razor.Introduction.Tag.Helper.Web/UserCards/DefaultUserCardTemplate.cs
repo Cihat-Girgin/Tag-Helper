@@ -9,7 +9,7 @@
 
         protected override string SetPicture()
         {
-            return $"<img class='card-img-top' src='/userpictures/defaultuserpicture.png'>";
+            return $"<img class='card-img-top' style='filter: blur(8px);  -webkit-filter: blur(8px);' src='{User.PictureUrl}'>";
         }
     }
 }

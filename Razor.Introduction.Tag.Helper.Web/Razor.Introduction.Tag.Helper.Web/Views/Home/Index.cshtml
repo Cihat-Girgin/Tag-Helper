@@ -4,22 +4,22 @@
 }
 @model List<User>
 
-@foreach (var item in Model)
-{
-
-    count++;
-    if (count == 1 || count % 5 == 1)
+    @foreach (var item in Model)
     {
 
-        @Html.Raw("<div class='row row-cols-1 row-cols-md-5 g-4'>")
-    }
+        count++;
+        if (count == 1 || count % 5 == 1)
+        {
 
-    <div class="col">
-        <user-card user="@item"></user-card>
-    </div>
+            @Html.Raw("<div class='row row-cols-1 row-cols-md-5 g-4 d-flex justify-content-center'>")
+        }
 
-    if (count % 5 == 0)
-    {
-        @Html.Raw("</div>")
+        <div class="col">
+            <user-card user="@item"></user-card>
+        </div>
+
+        if (count % 5 == 0)
+        {
+            @Html.Raw("</div>")
+        }
     }
-}

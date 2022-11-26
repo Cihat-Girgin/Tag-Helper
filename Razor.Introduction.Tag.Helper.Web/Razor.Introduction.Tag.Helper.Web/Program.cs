@@ -61,7 +61,7 @@ static void AddUserData(WebApplication app)
             Name = "user",
             Lastname = "x",
             Password = "pass",
-            PictureUrl = "/userpictures/primeuserpicture.png",
+            PictureUrl = "/userpictures/userx.jpg",
             Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" 
         },
         new User{
@@ -71,7 +71,7 @@ static void AddUserData(WebApplication app)
             Name = "user",
             Lastname = "y",
             Password = "pass",
-            PictureUrl = "/userpictures/primeuserpicture.png",
+            PictureUrl = "/userpictures/usery.jpg",
             Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
         },
         new User{
@@ -81,7 +81,17 @@ static void AddUserData(WebApplication app)
             Name = "user",
             Lastname = "z",
             Password = "pass",
-            PictureUrl = "/userpictures/primeuserpicture.png",
+            PictureUrl = "/userpictures/userz.jpg",
+            Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+         new User{
+            Id = new Guid(),
+            Username = "user-w",
+            Email = "userw@user.com",
+            Name = "user",
+            Lastname = "w",
+            Password = "pass",
+            PictureUrl = "/userpictures/userw.jpg",
             Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
         }
     };
