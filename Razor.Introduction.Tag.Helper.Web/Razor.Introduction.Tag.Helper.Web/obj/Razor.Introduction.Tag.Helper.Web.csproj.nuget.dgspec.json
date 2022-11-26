@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\cgirgin\\Desktop\\Razor-Introduction\\Tag-Helper\\Razor.Introduction.Tag.Helper.Web\\Razor.Introduction.Tag.Helper.Web\\Razor.Introduction.Tag.Helper.Web.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\cgirgin\\Desktop\\Razor-Introduction\\Tag-Helper\\Razor.Introduction.Tag.Helper.Web\\Razor.Introduction.Tag.Helper.Web\\Razor.Introduction.Tag.Helper.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cgirgin\\Desktop\\Razor-Introduction\\Tag-Helper\\Razor.Introduction.Tag.Helper.Web\\Razor.Introduction.Tag.Helper.Web\\Razor.Introduction.Tag.Helper.Web.csproj",
+        "projectName": "Razor.Introduction.Tag.Helper.Web",
+        "projectPath": "C:\\Users\\cgirgin\\Desktop\\Razor-Introduction\\Tag-Helper\\Razor.Introduction.Tag.Helper.Web\\Razor.Introduction.Tag.Helper.Web\\Razor.Introduction.Tag.Helper.Web.csproj",
+        "packagesPath": "C:\\Users\\cgirgin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cgirgin\\Desktop\\Razor-Introduction\\Tag-Helper\\Razor.Introduction.Tag.Helper.Web\\Razor.Introduction.Tag.Helper.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cgirgin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://nuget.org/api/v2/": {},
+          "https://pkgs.dev.azure.com/magiclick/BaseClassLibraries/_packaging/BCL/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
