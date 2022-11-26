@@ -60,7 +60,9 @@ static void AddUserData(WebApplication app)
             Email = "userx@user.com",
             Name = "user",
             Lastname = "x",
-            Password = "pass"
+            Password = "pass",
+            PictureUrl = "/userpictures/primeuserpicture.png",
+            Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" 
         },
         new User{
             Id = new Guid(),
@@ -68,7 +70,9 @@ static void AddUserData(WebApplication app)
             Email = "usery@user.com",
             Name = "user",
             Lastname = "y",
-            Password = "pass"
+            Password = "pass",
+            PictureUrl = "/userpictures/primeuserpicture.png",
+            Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
         },
         new User{
             Id = new Guid(),
@@ -76,7 +80,9 @@ static void AddUserData(WebApplication app)
             Email = "userz@user.com",
             Name = "user",
             Lastname = "z",
-            Password = "pass"
+            Password = "pass",
+            PictureUrl = "/userpictures/primeuserpicture.png",
+            Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
         }
     };
 

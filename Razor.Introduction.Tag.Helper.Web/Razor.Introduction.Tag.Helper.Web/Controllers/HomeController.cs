@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Razor.Introduction.Tag.Helper.Web.DatabaseContexts;
 using Razor.Introduction.Tag.Helper.Web.Models;
 using System.Diagnostics;
 
@@ -7,18 +9,19 @@ namespace Razor.Introduction.Tag.Helper.Web.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly UserDatabaseContext _context;
 
-        public HomeController(ILogger<HomeController> logger, IHttpContextAccessor httpContextAccessor)
+        public HomeController(ILogger<HomeController> logger,UserDatabaseContext context )
         {
             _logger = logger;
-            _httpContextAccessor = httpContextAccessor;
+            _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var user = _httpContextAccessor.HttpContext.User;
-            return View();
+            var userList = await _context.Users.ToListAsync();
+
+            return View(userList);
         }
 
         public IActionResult Privacy()
