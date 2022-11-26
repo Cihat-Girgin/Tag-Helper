@@ -46,6 +46,7 @@ static void AddUserData(WebApplication app)
 
     List<User> userList = new() {
         new User{
+            Id = new Guid(),
             Username = "user-x",
             Email = "userx@user.com",
             Name = "user",
@@ -53,6 +54,7 @@ static void AddUserData(WebApplication app)
             Password = "pass"
         },
         new User{
+            Id = new Guid(),
             Username = "user-y",
             Email = "usery@user.com",
             Name = "user",
@@ -60,6 +62,7 @@ static void AddUserData(WebApplication app)
             Password = "pass"
         },
         new User{
+            Id = new Guid(),
             Username = "user-z",
             Email = "userz@user.com",
             Name = "user",
