@@ -1,9 +1,21 @@
+using Microsoft.EntityFrameworkCore;
+using Razor.Introduction.Tag.Helper.Web.DatabaseContexts;
+using Razor.Introduction.Tag.Helper.Web.Models;
+using System;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddDbContext<UserDatabaseContext>(options =>
+{
+    options.UseInMemoryDatabase("UserInMemoryDatabase");
+});
+
 var app = builder.Build();
+
+AddUserData(app);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -25,3 +37,38 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+
+static void AddUserData(WebApplication app)
+{
+    var scope = app.Services.CreateScope();
+    var db = scope.ServiceProvider.GetService<UserDatabaseContext>();
+
+    List<User> userList = new() {
+        new User{
+            Username = "user-x",
+            Email = "userx@user.com",
+            Name = "user",
+            Lastname = "x",
+            Password = "pass"
+        },
+        new User{
+            Username = "user-y",
+            Email = "usery@user.com",
+            Name = "user",
+            Lastname = "y",
+            Password = "pass"
+        },
+        new User{
+            Username = "user-z",
+            Email = "userz@user.com",
+            Name = "user",
+            Lastname = "z",
+            Password = "pass"
+        }
+    };
+
+    db.Users.AddRange(userList);
+
+    db.SaveChanges();
+}
